@@ -2,6 +2,7 @@
 # Define the provider
 provider "aws" {
   region = "us-east-2"
+  profile = "dev"
 }
 
 # Define an AWS EC2 instance
@@ -19,3 +20,4 @@ output "instance_public_ip" {
   value = aws_instance.example.public_ip
   description = "The public IP address of the EC2 instance"
 }
+
