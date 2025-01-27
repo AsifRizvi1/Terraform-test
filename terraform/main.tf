@@ -2,7 +2,7 @@
 # Define the provider
 provider "aws" {
   region = "us-east-2"
-  profile = "dev"
+  
 }
 
 # Define an AWS EC2 instance
